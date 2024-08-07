@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template-columns: 200px 3fr 200px;
+    grid-template-rows: 100px 150px 300px 100px;
+    grid-template-areas: 
+    "header header header"
+    "menu nav nav"
+    "aside1 main aside2"
+    "footer footer footer";
+}
+
+header, .menu, .nav, aside, main, footer{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    color: white;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: chocolate;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: cyan;
+}
+
+.one{
+    grid-area: aside1;
+    background-color: darkgreen;
+}
+main{
+    grid-area: main;
+    background-color: dodgerblue;
+}
+.two{
+    grid-area: aside2;
+    background-color: gold;
+}
+footer{
+    grid-area: footer;
+    background-color: darkorange;
+}
